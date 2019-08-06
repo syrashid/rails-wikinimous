@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container p-5">
   <h1><%= @article.title %></h1>
-  <%= link_to "Edit Article", edit_article_path  %>
-  <%= link_to "Remove Article", article_path,
+  <%= link_to '<i class="far fa-edit font-weight-bold" style="font-size: 35px"></i>'.html_safe, edit_article_path  %>
+  <%= link_to '<i class="far fa-trash-alt font-weight-bold" style="font-size: 35px"></i>'.html_safe, article_path,
       method: :delete,
       data: { confirm: "Are you sure?" } %>
   <p><%= @article.content %></p>
