@@ -1,5 +1,12 @@
 {
   "name": "rails-wikinimous",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "5.1.1",
+    "markdown-it": "^10.0.0",
+    "textarea-markdown": "^1.2.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }

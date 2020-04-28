@@ -1,8 +1,9 @@
 
-  <h1><%= @article.title %></h1>
-  <%= link_to '<i class="far fa-edit font-weight-bold" style="font-size: 35px"></i>'.html_safe, edit_article_path  %>
-  <%= link_to '<i class="far fa-trash-alt font-weight-bold" style="font-size: 35px"></i>'.html_safe, article_path,
+  <h1 class="mb-3 pb-3 border-bottom text-center"><%= @article.title %>
+  <%= link_to '<i class="far fa-edit font-weight-bold" ></i>'.html_safe, edit_article_path  %>
+  <%= link_to '<i class="far fa-trash-alt font-weight-bold" ></i>'.html_safe, article_path,
       method: :delete,
       data: { confirm: "Are you sure?" } %>
-  <p><%= @article.content %></p>
+  </h1>
+  <p class="markup-text"><%= @article.content %></p>
 

@@ -14,3 +14,9 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+import { initMarkdown } from './components/init_markdown';
+
+document.addEventListener('turbolinks:load', () => {
+  initMarkdown();
+});

@@ -6,8 +6,11 @@
 
   <div class="form-group">
     <%= f.label :content %>
-    <%= f.text_area :content, class: 'form-control' %>
+    <%= f.text_area :content, class: 'form-control', id: "editor", rows: "8"%>
   </div>
 
   <%= f.submit class: 'btn btn-outline-dark' %>
 <% end %>
+
+
+<div id="preview"></div>
